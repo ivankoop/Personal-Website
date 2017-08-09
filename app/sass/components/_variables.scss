@@ -1,0 +1,20 @@
+
+//colors
+$purple: #ff00c8;
+$dark_gray: #878788;
+$light_gray: #d7d8dc;
+
+//media querys
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+$phone: "(max-width: 768px)";
+
+//transitions
+
+@mixin transition($duration) {
+    -webkit-transition: $duration;
+    -moz-transition: $duration;
+    -ms-transition: $duration;
+    -o-transition: $duration;
+    transition: $duration;
+}

@@ -1,0 +1,43 @@
+
+//aca van los imports principales
+
+@import '../pages/home';
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  font-family: "Grandesign", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #373737;
+  font-size: 2rem;
+  line-height: 3.25rem;
+  margin: 0;
+  height: 100%;
+}
+
+.page{
+  transition: right, 0.25s;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  right: 0;
+  position: relative;
+}
+
+.main_container{
+
+  display: box;
+  display: flex;
+  box-pack: distribute;
+  justify-content: space-around;
+  box-align: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+}

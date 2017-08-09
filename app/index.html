@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>holis</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <div class="main_container">
+        <img src="images/menu-icon.svg" class="menu-icon" alt="">
+        <article class="home_container">
+          <div class="top-content">
+             <div class="top-title-cont">
+               <img src="images/profile_pic.jpg" alt="" class="home-profile-pic">
+                <div class="top-title">
+                  <h1 class="top-title-name">Victor Ivan Koop</h1>
+                  <h1 class="top-title-subtitle">Software Developer</h1>
+                </div>
+             </div>
+             <div class="top-gray-bar"></div>
+          </div>
+          <div class="mid-content">
+              <p>Acá vendría la típica parte en la que tengo que afirmar que me cuesta hablar de mí, pero la realidad es que si no me “vendo” yo mismo, no lo hará nadie, por lo que aquí vamos:</p>
+              <br>
+              <p>Soy de Paraguay, más precisamente de Asunción y mi pasión es la programación. Tengo conocimientos en distintas áreas de la informática, desarrollo web,
+                mobile (<a href="http://qode.pro/blog/que-es-una-app-nativa/" class="colored-link" target="_blank">Nativa</a> o <a href="http://aplicacionesmovil.com/tecnologia/desarrollo-de-aplicaciones-hibridas/" class="colored-link" target="_blank">Hibrida</a>), Desarrollo de <a href="https://es.wikipedia.org/wiki/Base_de_datos" class="colored-link" target="_blank">base de datos</a>,
+                Manejo de <a href="https://es.wikipedia.org/wiki/Distribuci%C3%B3n_Linux" class="colored-link" target="_blank">Servidores Linux</a> o <a href="https://es.wikipedia.org/wiki/Windows_Server" class="colored-link" target="_blank">Windows</a>.
+                También cuento con conocimientos de diseño de interfaces (<a href="https://es.wikipedia.org/wiki/Interfaz_de_usuario" class="colored-link" target="_blank">UI</a> - <a href="https://es.wikipedia.org/wiki/Experiencia_de_usuario" class="colored-link" target="_blank">UX</a>).</p>
+              <br>
+              <p>Llevo más de 4 años trabajando para distintas agencias. Actualmente soy desarrollador en <a href="http://teixido.co/" class="colored-link" target="_blank">Teixido & Co</a>, una de las empresas más reconocidas a nivel nacional; por sus diseños y productos de alta calidad.</p>
+          </div>
+          <div class="bottom-content">
+              <br>
+              <h1>APER! sigue el desarrollo. proximamente blog y portfolio.</h1>
+          </div>
+
+        </article>
+      </div>
+    </div>
+    <aside class="menu">
+
+    </aside>
+
+    <script type="text/javascript">
+
+      $(function(){
+        console.log('inicio');
+        var menu_flag = false;
+        $('.menu-icon').click(function(){
+
+          if(!menu_flag){
+            $('.menu').addClass('menu-active');
+            $('.page').css('right','15rem');
+            $(this).attr("src", "images/close.svg");
+            menu_flag = true;
+          } else {
+            $('.menu').removeClass('menu-active');
+            $('.page').css('right','0');
+            $(this).attr("src", "images/menu-icon.svg");
+            menu_flag = false;
+          }
+
+        });
+
+      });
+
+    </script>
+
+  </body>
+</html>
